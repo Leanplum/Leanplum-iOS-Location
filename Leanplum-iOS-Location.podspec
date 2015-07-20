@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/leanplum'
   s.platform = :ios, '5.0'
   s.requires_arc = true
-  s.source = { :git => 'https://github.com/Leanplum/Leanplum-iOS-Location.git', :tag =>  '1.3.6.2'}
+  s.source = { :git => 'https://github.com/Leanplum/Leanplum-iOS-Location.git', :tag =>  '1.3.7'}
   s.frameworks = 'CoreLocation'
   s.preserve_paths = 'LeanplumLocation.framework'
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
