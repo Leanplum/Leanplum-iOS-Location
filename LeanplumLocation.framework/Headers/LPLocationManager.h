@@ -1,12 +1,19 @@
 //
 //  LPLocationManager.h
-//  Version 1.3.9
+//  Version 1.4.0
 //
-//  Copyright (c) 2015 Leanplum. All rights reserved.
+//  Copyright (c) 2016 Leanplum. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+
+// Types of location accuracy. Higher value implies better accuracy.
+typedef enum {
+    IP = 0,
+    CELL = 1,
+    GPS = 2
+} LPLocationAccuracyType;
 
 @interface LPLocationManager : NSObject <CLLocationManagerDelegate>
 
