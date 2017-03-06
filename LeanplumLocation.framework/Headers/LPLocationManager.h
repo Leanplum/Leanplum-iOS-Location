@@ -1,6 +1,6 @@
 //
 //  LPLocationManager.h
-//  Version 1.5.0
+//  Version 1.5.1
 //
 //  Copyright (c) 2016 Leanplum. All rights reserved.
 //
