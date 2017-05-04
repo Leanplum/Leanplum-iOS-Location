@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Leanplum-iOS-LocationAndBeacons'
-  s.version          = '2.0.0-SNAPSHOT'
+  s.name = 'Leanplum-iOS-LocationAndBeacons-source'
+  s.version = '2.0.0-SNAPSHOT'
   s.summary = 'Supplementary Leanplum pod to provide geofencing support.'
   s.description = 'Use LeanplumLocationAndBeacons instead if you also want support for iBeacons.'
   s.homepage = 'https://www.leanplum.com'
