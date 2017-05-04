@@ -3,7 +3,7 @@
 //  Leanplum-iOS-Location
 //
 //  Created by Ben Marten on 07/21/2016.
-//  Copyright (c) 2016 Leanplum. All rights reserved.
+//  Copyright (c) 2016 Leanplum, Inc. All rights reserved.
 //
 //  Licensed to the Apache Software Foundation (ASF) under one
 //  or more contributor license agreements.  See the NOTICE file
