@@ -1,0 +1,28 @@
+PODS:
+  - Leanplum-iOS-Location (2.0.0-SNAPSHOT):
+    - Leanplum-iOS-SDK
+  - Leanplum-iOS-LocationAndBeacons (2.0.0-SNAPSHOT):
+    - Leanplum-iOS-SDK
+  - Leanplum-iOS-SDK (1.7.0)
+
+DEPENDENCIES:
+  - Leanplum-iOS-Location (from `../`)
+  - Leanplum-iOS-LocationAndBeacons (from `../`)
+  - Leanplum-iOS-SDK (from `../../../../Leanplum-iOS-SDK/`)
+
+EXTERNAL SOURCES:
+  Leanplum-iOS-Location:
+    :path: ../
+  Leanplum-iOS-LocationAndBeacons:
+    :path: ../
+  Leanplum-iOS-SDK:
+    :path: ../../../../Leanplum-iOS-SDK/
+
+SPEC CHECKSUMS:
+  Leanplum-iOS-Location: c9d22b17bdcb45de74639319d39e3f459f672560
+  Leanplum-iOS-LocationAndBeacons: 06e09199155a46d0593ad45b3a0507de0d8a2ce4
+  Leanplum-iOS-SDK: 62535fa92153312be4785e85e51a822d63ca60c8
+
+PODFILE CHECKSUM: 9335f291525127afc5c2c77832527b43ba7112f6
+
+COCOAPODS: 1.2.1

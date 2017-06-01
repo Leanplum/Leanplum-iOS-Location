@@ -1,0 +1,35 @@
+{
+  "name": "Leanplum-iOS-LocationAndBeacons",
+  "version": "2.0.0-SNAPSHOT",
+  "summary": "Supplementary Leanplum pod to provide geofencing support.",
+  "description": "Use LeanplumLocationAndBeacons instead if you also want support for iBeacons.",
+  "homepage": "https://www.leanplum.com",
+  "license": {
+    "type": "Commercial",
+    "text": "See https://www.leanplum.com/tos"
+  },
+  "authors": {
+    "Leanplum": "support@leanplum.com"
+  },
+  "social_media_url": "https://twitter.com/leanplum",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/Leanplum/Leanplum-iOS-LocationAndBeacons-Internal.git",
+    "tag": "2.0.0-SNAPSHOT"
+  },
+  "source_files": "Leanplum-iOS-Location/Classes/**/*",
+  "xcconfig": {
+    "BITCODE_GENERATION_MODE": "bitcode"
+  },
+  "frameworks": "CoreLocation",
+  "documentation_url": "https://www.leanplum.com/docs#/docs",
+  "module_name": "LeanplumLocationAndBeacons",
+  "dependencies": {
+    "Leanplum-iOS-SDK": [
+
+    ]
+  }
+}

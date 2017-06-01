@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests : NSObject
+@end
+@implementation PodsDummy_Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests
+@end
