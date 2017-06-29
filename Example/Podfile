@@ -7,5 +7,10 @@ target 'Leanplum-iOS-Location_Example' do
   pod 'Leanplum-iOS-SDK-source', :path => '../../Leanplum-iOS-SDK/'
 
   target 'Leanplum-iOS-Location_Tests' do
+    pod 'Leanplum-iOS-Location-source', :path => '../'
+    pod 'Leanplum-iOS-LocationAndBeacons-source', :path => '../'
+    pod 'Leanplum-iOS-SDK-source', :path => '../../Leanplum-iOS-SDK/'
+      
+    pod 'OCMock', '~> 3.3.1'
   end
 end
