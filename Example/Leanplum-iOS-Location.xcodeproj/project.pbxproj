@@ -34,10 +34,7 @@
 		B54A42601D750AEE00B8257E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B54A42611D750AEE00B8257E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		B54A42621D750AEE00B8257E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		B56C173C1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56C173A1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework */; };
-		B56C173D1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56C173B1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example.framework */; };
-		B56C173E1D66741A00DAE3BC /* Leanplum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56C17381D6673DD00DAE3BC /* Leanplum.framework */; };
-		D29208895A152F826BC7E362 /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C094AC43911B3C8FD2D1E976 /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a */; };
+		BF89A13773DC5190AB3B82EC /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C094AC43911B3C8FD2D1E976 /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56C173E1D66741A00DAE3BC /* Leanplum.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -109,12 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56C173C1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework in Frameworks */,
-				B56C173D1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example.framework in Frameworks */,
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D29208895A152F826BC7E362 /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a in Frameworks */,
+				BF89A13773DC5190AB3B82EC /* libPods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
