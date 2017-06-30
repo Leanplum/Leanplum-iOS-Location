@@ -2,10 +2,11 @@ inhibit_all_warnings!
 
 target 'Leanplum-iOS-Location_Example' do
   platform :ios, '6.0'
-  pod 'Leanplum-iOS-Location-source', :path => '../'
   pod 'Leanplum-iOS-LocationAndBeacons-source', :path => '../'
   pod 'Leanplum-iOS-SDK-source', :path => '../../Leanplum-iOS-SDK/'
 
   target 'Leanplum-iOS-Location_Tests' do
+    pod 'Leanplum-iOS-LocationAndBeacons-source', :path => '../'
+    pod 'OCMock', '~> 3.3.1'
   end
 end
