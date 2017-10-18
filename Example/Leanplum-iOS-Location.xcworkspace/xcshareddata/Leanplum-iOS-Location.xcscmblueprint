@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B1608B45216904A28B1EDCAD9931D822FDB058C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B1608B45216904A28B1EDCAD9931D822FDB058C9" : 9223372036854775807,
+    "E656D7A1371153A68B33B9FA35B8C6F69717CE45" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5DFA829A-1881-4B64-9948-6A5C3B043EAA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B1608B45216904A28B1EDCAD9931D822FDB058C9" : "Leanplum-iOS-Location\/",
+    "E656D7A1371153A68B33B9FA35B8C6F69717CE45" : "Leanplum-iOS-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Leanplum-iOS-Location",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/Leanplum-iOS-Location.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-Location.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B1608B45216904A28B1EDCAD9931D822FDB058C9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Leanplum\/Leanplum-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E656D7A1371153A68B33B9FA35B8C6F69717CE45"
+    }
+  ]
+}
