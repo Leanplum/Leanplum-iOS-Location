@@ -18,7 +18,7 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
-			<string>Leanplum-iOS-Location</string>
+			<string>Leanplum-iOS-Location-source</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -28,17 +28,7 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
-			<string>Leanplum-iOS-LocationAndBeacons</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>See https://www.leanplum.com/tos</string>
-			<key>License</key>
-			<string>Commercial</string>
-			<key>Title</key>
-			<string>Leanplum-iOS-SDK</string>
+			<string>Leanplum-iOS-SDK-source</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
