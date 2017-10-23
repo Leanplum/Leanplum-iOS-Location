@@ -1,7 +1,7 @@
 PODS:
-  - Leanplum-iOS-Location-source (2.0.3-SNAPSHOT):
+  - Leanplum-iOS-Location-source (2.0.3):
     - Leanplum-iOS-SDK-source
-  - Leanplum-iOS-LocationAndBeacons-source (2.0.3-SNAPSHOT):
+  - Leanplum-iOS-LocationAndBeacons-source (2.0.3):
     - Leanplum-iOS-SDK-source
   - Leanplum-iOS-SDK-source (2.0.3-SNAPSHOT)
   - OCMock (3.3.1)
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
     :path: ../../Leanplum-iOS-SDK/
 
 SPEC CHECKSUMS:
-  Leanplum-iOS-Location-source: a8be2becc218ec056d14e0f0527ef242331d8883
-  Leanplum-iOS-LocationAndBeacons-source: 71bc97e77868f811b527fee4b81c1c71eee80e85
+  Leanplum-iOS-Location-source: 8c16907305c1d3283eb6d83bb2956090efc35a70
+  Leanplum-iOS-LocationAndBeacons-source: a032c89000b91e3308e006ac4b6b5f60a37e967f
   Leanplum-iOS-SDK-source: 339b3a7df0a2c02ba89e021cc9f5954e4964c06d
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
 

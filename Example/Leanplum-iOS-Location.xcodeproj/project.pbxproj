@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07097ED11F9E792D00BBD905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07097EC61F9E792D00BBD905 /* InfoPlist.strings */; };
+		07097ED21F9E792D00BBD905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07097ECB1F9E792D00BBD905 /* Main.storyboard */; };
+		07097ED31F9E792D00BBD905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097ECC1F9E792D00BBD905 /* main.m */; };
+		07097ED41F9E792D00BBD905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07097ECD1F9E792D00BBD905 /* Images.xcassets */; };
+		07097ED51F9E792D00BBD905 /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097ECE1F9E792D00BBD905 /* LPAppDelegate.m */; };
+		07097ED61F9E792D00BBD905 /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097ECF1F9E792D00BBD905 /* LPViewController.m */; };
+		07097ED71F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07097ED01F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist */; };
+		07097EE41F9E793C00BBD905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDA1F9E793C00BBD905 /* Assets.xcassets */; };
+		07097EE51F9E793C00BBD905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EDB1F9E793C00BBD905 /* ViewController.m */; };
+		07097EE61F9E793C00BBD905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDC1F9E793C00BBD905 /* LaunchScreen.storyboard */; };
+		07097EE71F9E793C00BBD905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDE1F9E793C00BBD905 /* Main.storyboard */; };
+		07097EE81F9E793C00BBD905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EE01F9E793C00BBD905 /* main.m */; };
+		07097EE91F9E793C00BBD905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EE11F9E793C00BBD905 /* AppDelegate.m */; };
+		07097EEA1F9E793C00BBD905 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07097EE21F9E793C00BBD905 /* Info.plist */; };
 		07E5C8F91F053D5700A4B092 /* GeofencingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5C8F81F053D5700A4B092 /* GeofencingTest.m */; };
 		07E5C8FC1F053E0000A4B092 /* regionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E5C8FB1F053E0000A4B092 /* regionData.json */; };
 		07E5C8FD1F053E0000A4B092 /* regionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E5C8FB1F053E0000A4B092 /* regionData.json */; };
@@ -14,27 +28,15 @@
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LPAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LPViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AE23709086FF0A8D1E513619 /* libPods-Leanplum-iOS-Location_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA770AB6A3A4EB842953CB29 /* libPods-Leanplum-iOS-Location_Example.a */; };
 		B1CD3C6B8BCD3CDAE8E6CF50 /* libPods-Leanplum-iOS-LocationAndBeacons_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A252A9C26E7CA95A8BEE80 /* libPods-Leanplum-iOS-LocationAndBeacons_Example.a */; };
-		B54A42541D750AEE00B8257E /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LPAppDelegate.m */; };
-		B54A42561D750AEE00B8257E /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LPViewController.m */; };
-		B54A42571D750AEE00B8257E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		B54A425B1D750AEE00B8257E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		B54A425C1D750AEE00B8257E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		B54A425D1D750AEE00B8257E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		B54A42601D750AEE00B8257E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B54A42611D750AEE00B8257E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		B54A42621D750AEE00B8257E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +58,25 @@
 
 /* Begin PBXFileReference section */
 		02FBBC1EC376C6ABCC9149A7 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		07097E631F9E435300BBD905 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		07097E641F9E435300BBD905 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		07097E661F9E435300BBD905 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		07097E671F9E435300BBD905 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		07097E6A1F9E435300BBD905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07097E6C1F9E435300BBD905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07097E6F1F9E435300BBD905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07097E711F9E435300BBD905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07097E721F9E435300BBD905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07097EC71F9E792D00BBD905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07097EC81F9E792D00BBD905 /* LPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
+		07097EC91F9E792D00BBD905 /* Leanplum-iOS-Location-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Leanplum-iOS-Location-Prefix.pch"; sourceTree = "<group>"; };
+		07097ECA1F9E792D00BBD905 /* LPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPViewController.h; sourceTree = "<group>"; };
+		07097ECB1F9E792D00BBD905 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		07097ECC1F9E792D00BBD905 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07097ECD1F9E792D00BBD905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07097ECE1F9E792D00BBD905 /* LPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
+		07097ECF1F9E792D00BBD905 /* LPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPViewController.m; sourceTree = "<group>"; };
+		07097ED01F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Leanplum-iOS-Location-Info.plist"; sourceTree = "<group>"; };
+		07097ED91F9E793C00BBD905 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07097EDA1F9E793C00BBD905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07097EDB1F9E793C00BBD905 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07097EDD1F9E793C00BBD905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07097EDF1F9E793C00BBD905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07097EE01F9E793C00BBD905 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07097EE11F9E793C00BBD905 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07097EE21F9E793C00BBD905 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07097EE31F9E793C00BBD905 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		07E5C8F81F053D5700A4B092 /* GeofencingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofencingTest.m; sourceTree = "<group>"; };
 		07E5C8FB1F053E0000A4B092 /* regionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regionData.json; sourceTree = "<group>"; };
 		4763DA6DDBAE82F809FB7AB7 /* Pods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-Location_Example-Leanplum-iOS-Location_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,15 +88,6 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* Leanplum-iOS-Location-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Leanplum-iOS-Location-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* Leanplum-iOS-Location-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leanplum-iOS-Location-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* LPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Leanplum-iOS-Location_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leanplum-iOS-Location_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -92,12 +95,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		72A6A1E7955C4B18FC261A3C /* Pods-Leanplum-iOS-Location_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-Location_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-Location_Example/Pods-Leanplum-iOS-Location_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		837FBA10D2027CAB2712AF8C /* Pods-Leanplum-iOS-Location_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-Location_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-Location_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9146AF5281BE07B7711776EE /* Leanplum-iOS-Location.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Leanplum-iOS-Location.podspec"; path = "../Leanplum-iOS-Location.podspec"; sourceTree = "<group>"; };
 		9A7D6243D90C90EA69FFE243 /* Pods_Leanplum_iOS_Location_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leanplum_iOS_Location_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62F1494591BF3A5439300C7 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B54A42681D750AEE00B8257E /* Leanplum-iOS-LocationAndBeacons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leanplum-iOS-LocationAndBeacons_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B54A42691D750AEE00B8257E /* Leanplum-iOS-LocationAndBeacons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Leanplum-iOS-LocationAndBeacons-Info.plist"; path = "/Users/Ben/dev/leanplum/Leanplum/AppleSDK/Leanplum-iOS-Location/Example/Leanplum-iOS-LocationAndBeacons-Info.plist"; sourceTree = "<absolute>"; };
 		B56C17381D6673DD00DAE3BC /* Leanplum.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Leanplum.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Leanplum-iOS-Location-cwbzviqzqnnzqubmsmrqunzqduii/Build/Products/Debug-iphonesimulator/Leanplum-iOS-SDK/Leanplum.framework"; sourceTree = "<group>"; };
 		B56C173A1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Leanplum-iOS-Location-cwbzviqzqnnzqubmsmrqunzqduii/Build/Products/Debug-iphonesimulator/Pods_Leanplum_iOS_Location_Example_Leanplum_iOS_Location_Tests.framework"; sourceTree = "<group>"; };
 		B56C173B1D66740E00DAE3BC /* Pods_Leanplum_iOS_Location_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Leanplum_iOS_Location_Example.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Leanplum-iOS-Location-cwbzviqzqnnzqubmsmrqunzqduii/Build/Products/Debug-iphonesimulator/Pods_Leanplum_iOS_Location_Example.framework"; sourceTree = "<group>"; };
@@ -147,20 +148,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07097E621F9E435300BBD905 /* Example for Leanplum-iOS-LocationAndBeacons */ = {
+		07097EC51F9E792D00BBD905 /* LeanplumLocationExample */ = {
 			isa = PBXGroup;
 			children = (
-				07097E631F9E435300BBD905 /* AppDelegate.h */,
-				07097E641F9E435300BBD905 /* AppDelegate.m */,
-				07097E661F9E435300BBD905 /* ViewController.h */,
-				07097E671F9E435300BBD905 /* ViewController.m */,
-				07097E691F9E435300BBD905 /* Main.storyboard */,
-				07097E6C1F9E435300BBD905 /* Assets.xcassets */,
-				07097E6E1F9E435300BBD905 /* LaunchScreen.storyboard */,
-				07097E711F9E435300BBD905 /* Info.plist */,
-				07097E721F9E435300BBD905 /* main.m */,
+				07097EC61F9E792D00BBD905 /* InfoPlist.strings */,
+				07097EC81F9E792D00BBD905 /* LPAppDelegate.h */,
+				07097EC91F9E792D00BBD905 /* Leanplum-iOS-Location-Prefix.pch */,
+				07097ECA1F9E792D00BBD905 /* LPViewController.h */,
+				07097ECB1F9E792D00BBD905 /* Main.storyboard */,
+				07097ECC1F9E792D00BBD905 /* main.m */,
+				07097ECD1F9E792D00BBD905 /* Images.xcassets */,
+				07097ECE1F9E792D00BBD905 /* LPAppDelegate.m */,
+				07097ECF1F9E792D00BBD905 /* LPViewController.m */,
+				07097ED01F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist */,
 			);
-			path = "Example for Leanplum-iOS-LocationAndBeacons";
+			path = LeanplumLocationExample;
+			sourceTree = "<group>";
+		};
+		07097ED81F9E793C00BBD905 /* LeanplumLocationAndBeaconsExample */ = {
+			isa = PBXGroup;
+			children = (
+				07097ED91F9E793C00BBD905 /* AppDelegate.h */,
+				07097EDA1F9E793C00BBD905 /* Assets.xcassets */,
+				07097EDB1F9E793C00BBD905 /* ViewController.m */,
+				07097EDC1F9E793C00BBD905 /* LaunchScreen.storyboard */,
+				07097EDE1F9E793C00BBD905 /* Main.storyboard */,
+				07097EE01F9E793C00BBD905 /* main.m */,
+				07097EE11F9E793C00BBD905 /* AppDelegate.m */,
+				07097EE21F9E793C00BBD905 /* Info.plist */,
+				07097EE31F9E793C00BBD905 /* ViewController.h */,
+			);
+			path = LeanplumLocationAndBeaconsExample;
 			sourceTree = "<group>";
 		};
 		07E5C8F71F053D4800A4B092 /* Classes */ = {
@@ -182,8 +200,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				6003F593195388D20070C39A /* Example for Leanplum-iOS-Location */,
-				07097E621F9E435300BBD905 /* Example for Leanplum-iOS-LocationAndBeacons */,
+				07097ED81F9E793C00BBD905 /* LeanplumLocationAndBeaconsExample */,
+				07097EC51F9E792D00BBD905 /* LeanplumLocationExample */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				E57DDC753D8FF1612C799D80 /* Pods */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
@@ -219,33 +237,6 @@
 				CA2676F18161A73E6ECC22B0 /* libPods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for Leanplum-iOS-Location */ = {
-			isa = PBXGroup;
-			children = (
-				6003F59C195388D20070C39A /* LPAppDelegate.h */,
-				6003F59D195388D20070C39A /* LPAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LPViewController.h */,
-				6003F5A6195388D20070C39A /* LPViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-			);
-			name = "Example for Leanplum-iOS-Location";
-			path = "Leanplum-iOS-Location";
-			sourceTree = "<group>";
-		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F595195388D20070C39A /* Leanplum-iOS-Location-Info.plist */,
-				B54A42691D750AEE00B8257E /* Leanplum-iOS-LocationAndBeacons-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* Leanplum-iOS-Location-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6003F5B5195388D20070C39A /* Tests */ = {
@@ -407,10 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				07097ED21F9E792D00BBD905 /* Main.storyboard in Resources */,
+				07097ED41F9E792D00BBD905 /* Images.xcassets in Resources */,
 				07E5C8FC1F053E0000A4B092 /* regionData.json in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				07097ED71F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist in Resources */,
+				07097ED11F9E792D00BBD905 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +419,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54A42601D750AEE00B8257E /* Main.storyboard in Resources */,
-				B54A42611D750AEE00B8257E /* Images.xcassets in Resources */,
-				B54A42621D750AEE00B8257E /* InfoPlist.strings in Resources */,
+				07097EEA1F9E793C00BBD905 /* Info.plist in Resources */,
+				07097EE71F9E793C00BBD905 /* Main.storyboard in Resources */,
+				07097EE41F9E793C00BBD905 /* Assets.xcassets in Resources */,
+				07097EE61F9E793C00BBD905 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,9 +580,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LPAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LPViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				07097ED51F9E792D00BBD905 /* LPAppDelegate.m in Sources */,
+				07097ED31F9E792D00BBD905 /* main.m in Sources */,
+				07097ED61F9E792D00BBD905 /* LPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,9 +598,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54A42541D750AEE00B8257E /* LPAppDelegate.m in Sources */,
-				B54A42561D750AEE00B8257E /* LPViewController.m in Sources */,
-				B54A42571D750AEE00B8257E /* main.m in Sources */,
+				07097EE81F9E793C00BBD905 /* main.m in Sources */,
+				07097EE51F9E793C00BBD905 /* ViewController.m in Sources */,
+				07097EE91F9E793C00BBD905 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,28 +620,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07097E691F9E435300BBD905 /* Main.storyboard */ = {
+		07097EC61F9E792D00BBD905 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07097E6A1F9E435300BBD905 /* Base */,
+				07097EC71F9E792D00BBD905 /* en */,
 			);
-			name = Main.storyboard;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		07097E6E1F9E435300BBD905 /* LaunchScreen.storyboard */ = {
+		07097EDC1F9E793C00BBD905 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				07097E6F1F9E435300BBD905 /* Base */,
+				07097EDD1F9E793C00BBD905 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		07097EDE1F9E793C00BBD905 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				07097EDF1F9E793C00BBD905 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
@@ -744,8 +737,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Leanplum-iOS-Location/Leanplum-iOS-Location-Prefix.pch";
-				INFOPLIST_FILE = "Leanplum-iOS-Location/Leanplum-iOS-Location-Info.plist";
+				GCC_PREFIX_HEADER = "LeanplumLocationExample/Leanplum-iOS-Location-Prefix.pch";
+				INFOPLIST_FILE = "LeanplumLocationExample/Leanplum-iOS-Location-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -763,8 +756,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Leanplum-iOS-Location/Leanplum-iOS-Location-Prefix.pch";
-				INFOPLIST_FILE = "Leanplum-iOS-Location/Leanplum-iOS-Location-Info.plist";
+				GCC_PREFIX_HEADER = "LeanplumLocationExample/Leanplum-iOS-Location-Prefix.pch";
+				INFOPLIST_FILE = "LeanplumLocationExample/Leanplum-iOS-Location-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -820,13 +813,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Leanplum-iOS-Location/Leanplum-iOS-Location-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 					"LP_BEACONS=1",
 				);
-				INFOPLIST_FILE = "Leanplum-iOS-LocationAndBeacons-Info.plist";
+				INFOPLIST_FILE = LeanplumLocationAndBeaconsExample/Info.plist;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -844,13 +837,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Leanplum-iOS-Location/Leanplum-iOS-Location-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 					"LP_BEACONS=1",
 				);
-				INFOPLIST_FILE = "Leanplum-iOS-LocationAndBeacons-Info.plist";
+				INFOPLIST_FILE = LeanplumLocationAndBeaconsExample/Info.plist;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
