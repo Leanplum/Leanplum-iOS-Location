@@ -39,6 +39,7 @@
     NSUInteger _maxGeofences;
     CLLocation *_userLocation;
     CLLocationDistance _geofenceDistanceUpperBound;
+    CLLocationManager *_locationManager;
 }
 
 + (CLRegion *)regionFromDictionary:(NSDictionary *)regionData withName:(NSString *)name;
@@ -408,26 +409,15 @@
     [mockLocationManager stopMocking];
 }
 
-- (void)stopMonitoringAllRegions
-{
-    CLLocationManager *locationManager = [self.locationManager locationManager];
-    while ([locationManager.monitoredRegions count] != 0) {
-        for (CLRegion *region in locationManager.monitoredRegions) {
-            [locationManager stopMonitoringForRegion:region];
-        }
-    }
-    XCTAssertEqual([locationManager.monitoredRegions count], 0);
-}
-
 /**
  * Cancels all regions that are being monitored and sets |numberOfRegions| arbitrary non-Leaplum
  * geofences.
  */
 - (void)setLocationManagerToMonitorArbitraryRegions:(NSUInteger)numberOfRegions
 {
-    [self stopMonitoringAllRegions];
     CLLocationManager *locationManager = [self.locationManager locationManager];
 
+    NSMutableArray *regions = [NSMutableArray new];
     for (NSInteger i = 0; i < numberOfRegions; i++) {
         NSString *identifer = [NSString stringWithFormat:@"arbitraryRegion%ld", (long) i];
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(i, i);
@@ -435,19 +425,10 @@
         CLRegion *region = [[CLCircularRegion alloc] initWithCenter:coordinate
                                                              radius:i
                                                          identifier:identifer];
-        [locationManager startMonitoringForRegion:region];
+        [regions addObject:region];
     }
-
-    // Give some time for locationManager to update its monitored regions.
-    for (NSInteger i = 0; i < 3; i++) {
-        [NSThread sleepForTimeInterval:0.5];
-        if ([locationManager.monitoredRegions count] == numberOfRegions) {
-            return;
-        }
-    }
-
-    XCTAssertEqual([locationManager.monitoredRegions count], numberOfRegions,
-                   @"GeofencingTest Error: it is taking too long for locationManager to sync");
+    
+    OCMStub([locationManager monitoredRegions]).andReturn([NSSet setWithArray:regions]);
 }
 
 /**
@@ -455,7 +436,11 @@
  */
 - (void)checkUpdateMaxGeofencesForNonLPRegions:(NSUInteger)alreadyMonitoredRegionsCount
 {
+    id  mockLocationManager = OCMClassMock([CLLocationManager class]);
+    self.locationManager->_locationManager = mockLocationManager;
+    
     CLLocationManager *locationManager = [self.locationManager locationManager];
+    
     NSUInteger unusedGeofencesCount = IOS_GEOFENCE_LIMIT - alreadyMonitoredRegionsCount;
     NSUInteger expectedMaxGeofences = MIN(self.locationManager->_maxGeofences,
                                           unusedGeofencesCount);
