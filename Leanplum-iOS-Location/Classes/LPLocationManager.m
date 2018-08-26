@@ -90,7 +90,7 @@
 + (void)load
 {
     LP_TRY
-    [LPVarCache registerRegionInitBlock:^(NSDictionary *regions,
+    [[LPVarCache sharedCache] registerRegionInitBlock:^(NSDictionary *regions,
                                           NSSet *foregroundRegionNames,
                                           NSSet *backgroundRegionNames) {
         [[LPLocationManager sharedManager] setRegionsData:regions

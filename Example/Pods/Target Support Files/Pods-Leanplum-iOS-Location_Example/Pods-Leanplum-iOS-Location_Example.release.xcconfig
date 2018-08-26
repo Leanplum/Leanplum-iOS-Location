@@ -1,10 +1,10 @@
 BITCODE_GENERATION_MODE = bitcode
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Leanplum-iOS-Location-source" "${PODS_ROOT}/Headers/Public/Leanplum-iOS-LocationAndBeacons-source" "${PODS_ROOT}/Headers/Public/Leanplum-iOS-SDK-source" "${PODS_ROOT}/Headers/Public/OCMock"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Leanplum-iOS-Location-source" "$PODS_CONFIGURATION_BUILD_DIR/Leanplum-iOS-SDK-source"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Leanplum-iOS-Location-source" "${PODS_CONFIGURATION_BUILD_DIR}/Leanplum-iOS-SDK-source"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Leanplum-iOS-Location-source" -isystem "${PODS_ROOT}/Headers/Public/Leanplum-iOS-LocationAndBeacons-source" -isystem "${PODS_ROOT}/Headers/Public/Leanplum-iOS-SDK-source" -isystem "${PODS_ROOT}/Headers/Public/OCMock"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"Leanplum-iOS-Location-source" -l"Leanplum-iOS-SDK-source" -l"sqlite3" -framework "CFNetwork" -framework "CoreLocation" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport" -weak_framework "StoreKit"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
