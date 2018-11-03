@@ -719,7 +719,7 @@
 {
     if ([region isKindOfClass:CLBeaconRegion.class]) {
         [_locationManager stopRangingBeaconsInRegion:(CLBeaconRegion *)region];
-        [_activeBeaconRegions delete:region];
+        [_activeBeaconRegions removeObject:region];
         if (_activeBeaconRegions.count == 0) {
             [_locationManager stopUpdatingLocation];
         }
