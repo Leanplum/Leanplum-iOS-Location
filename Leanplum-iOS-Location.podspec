@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'CoreLocation'
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
   s.dependency 'Leanplum-iOS-SDK'
+  s.module_name = 'LeanplumLocation'
 end
