@@ -201,11 +201,7 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
     CLLocationManager *locationManager = [self locationManager];
     if ([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-        if (_backgroundRegions.count) {
-            [locationManager requestAlwaysAuthorization];
-        } else {
-            [locationManager requestWhenInUseAuthorization];
-        }
+        [locationManager requestAlwaysAuthorization];
     }
 #endif
     LP_END_TRY
