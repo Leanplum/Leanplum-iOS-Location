@@ -13,14 +13,12 @@
 		07097ED41F9E792D00BBD905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07097ECD1F9E792D00BBD905 /* Images.xcassets */; };
 		07097ED51F9E792D00BBD905 /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097ECE1F9E792D00BBD905 /* LPAppDelegate.m */; };
 		07097ED61F9E792D00BBD905 /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097ECF1F9E792D00BBD905 /* LPViewController.m */; };
-		07097ED71F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07097ED01F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist */; };
 		07097EE41F9E793C00BBD905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDA1F9E793C00BBD905 /* Assets.xcassets */; };
 		07097EE51F9E793C00BBD905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EDB1F9E793C00BBD905 /* ViewController.m */; };
 		07097EE61F9E793C00BBD905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDC1F9E793C00BBD905 /* LaunchScreen.storyboard */; };
 		07097EE71F9E793C00BBD905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07097EDE1F9E793C00BBD905 /* Main.storyboard */; };
 		07097EE81F9E793C00BBD905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EE01F9E793C00BBD905 /* main.m */; };
 		07097EE91F9E793C00BBD905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07097EE11F9E793C00BBD905 /* AppDelegate.m */; };
-		07097EEA1F9E793C00BBD905 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07097EE21F9E793C00BBD905 /* Info.plist */; };
 		07E5C8F91F053D5700A4B092 /* GeofencingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5C8F81F053D5700A4B092 /* GeofencingTest.m */; };
 		07E5C8FC1F053E0000A4B092 /* regionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E5C8FB1F053E0000A4B092 /* regionData.json */; };
 		07E5C8FD1F053E0000A4B092 /* regionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E5C8FB1F053E0000A4B092 /* regionData.json */; };
@@ -352,7 +350,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LP;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ben Marten";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -395,7 +393,6 @@
 				07097ED21F9E792D00BBD905 /* Main.storyboard in Resources */,
 				07097ED41F9E792D00BBD905 /* Images.xcassets in Resources */,
 				07E5C8FC1F053E0000A4B092 /* regionData.json in Resources */,
-				07097ED71F9E792D00BBD905 /* Leanplum-iOS-Location-Info.plist in Resources */,
 				07097ED11F9E792D00BBD905 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +410,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07097EEA1F9E793C00BBD905 /* Info.plist in Resources */,
 				07097EE71F9E793C00BBD905 /* Main.storyboard in Resources */,
 				07097EE41F9E793C00BBD905 /* Assets.xcassets in Resources */,
 				07097EE61F9E793C00BBD905 /* LaunchScreen.storyboard in Resources */,
@@ -566,19 +562,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -606,18 +615,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
