@@ -24,7 +24,7 @@
 #import "LPLocationManager.h"
 
 #import <Leanplum/Leanplum.h>
-#import <Leanplum/Constants.h>
+#import <Leanplum/LPConstants.h>
 #import <Leanplum/LPActionManager.h>
 #import <Leanplum/LeanplumInternal.h>
 #import <Leanplum/LeanplumRequest.h>
