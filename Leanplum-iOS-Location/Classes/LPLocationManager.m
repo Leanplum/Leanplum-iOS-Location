@@ -813,12 +813,14 @@
                                    withFilter:actionFilter
                                 fromMessageId:nil
                          withContextualValues:nil];
+                [Leanplum trackGeofence:LPEnterRegion withInfo:name];
             } else if (state == CLRegionStateOutside) {
                 [Leanplum maybePerformActions:@[@"exitRegion"]
                                 withEventName:name
                                    withFilter:actionFilter
                                 fromMessageId:nil
                          withContextualValues:nil];
+                [Leanplum trackGeofence:LPExitRegion withInfo:name];
             }
         }
     }
