@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A86C969D21F28BF300EF83AC"
+               BuildableName = "Leanplum-iOS-LocationAndBeacons_Tests.xctest"
+               BlueprintName = "Leanplum-iOS-LocationAndBeacons_Tests"
+               ReferencedContainer = "container:Leanplum-iOS-Location.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
