@@ -34,3 +34,6 @@ Pods/
 Podfile.lock
 Example/Pods/
 Example/Podfile.lock
+
+Release/
+LeanplumLocation.framework.zip
