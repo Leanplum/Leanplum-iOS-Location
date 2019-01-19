@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Leanplum-iOS-LocationAndBeacons'
-  s.version = '2.2.5-beta.7'
+  s.version = '2.2.5-beta.8'
   s.summary = 'Supplementary Leanplum pod to provide geofencing and iBeacons support.'
   s.description = 'Use LeanplumLocation instead if you do not need support for iBeacons.'
   s.homepage = 'https://www.leanplum.com'
@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/Leanplum/Leanplum-iOS-Location.git', :tag => s.version.to_s}
   s.source_files = 'Leanplum-iOS-Location/Classes/**/*'
   s.frameworks = 'CoreLocation'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -fembed-bitcode', 'BITCODE_GENERATION_MODE' => 'bitcode' }
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
   s.dependency 'Leanplum-iOS-SDK'
   s.module_name = 'LeanplumLocationAndBeacons'
