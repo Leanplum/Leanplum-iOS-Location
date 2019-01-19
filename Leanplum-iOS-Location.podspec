@@ -12,7 +12,13 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/Leanplum/Leanplum-iOS-Location.git', :tag => s.version.to_s}
   s.source_files = 'Leanplum-iOS-Location/Classes/**/*'
   s.frameworks = 'CoreLocation'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -fembed-bitcode', 'BITCODE_GENERATION_MODE' => 'bitcode' }
+  s.xcconfig = { 
+    'OTHER_LDFLAGS[arch=i386]' => '-ObjC', 
+    'OTHER_LDFLAGS[arch=x86_64]' => '-ObjC', 
+    'OTHER_LDFLAGS[arch=armv7]' => '-ObjC -fembed-bitcode', 
+    'OTHER_LDFLAGS[arch=armv7s]' => '-ObjC -fembed-bitcode', 
+    'OTHER_LDFLAGS[arch=armv64]' => '-ObjC -fembed-bitcode', 
+    'BITCODE_GENERATION_MODE' => 'bitcode' }
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
   s.dependency 'Leanplum-iOS-SDK'
   s.module_name = 'LeanplumLocation'
