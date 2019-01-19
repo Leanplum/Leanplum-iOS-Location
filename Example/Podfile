@@ -2,7 +2,6 @@ inhibit_all_warnings!
 
 target 'Leanplum-iOS-Location_Example' do
   platform :ios, '8.0'
-  use_frameworks!
   pod 'Leanplum-iOS-Location', :path => '../'
   pod 'Leanplum-iOS-SDK'
 
@@ -13,7 +12,6 @@ end
 
 target 'Leanplum-iOS-LocationAndBeacons_Example' do
     platform :ios, '8.0'
-    use_frameworks!
     pod 'Leanplum-iOS-LocationAndBeacons', :path => '../'
     pod 'Leanplum-iOS-SDK'
     

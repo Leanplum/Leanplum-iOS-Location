@@ -23,12 +23,12 @@
 
 #import "LPLocationManager.h"
 
-#import <Leanplum/Leanplum.h>
-#import <Leanplum/LPConstants.h>
-#import <Leanplum/LPActionManager.h>
-#import <Leanplum/LeanplumInternal.h>
-#import <Leanplum/LeanplumRequest.h>
-#import <Leanplum/LPVarCache.h>
+#import "Leanplum.h"
+#import "LPConstants.h"
+#import "LPActionManager.h"
+#import "LeanplumInternal.h"
+#import "LeanplumRequest.h"
+#import "LPVarCache.h"
 
 #define LP_REGION_IDENTIFIER_PREFIX @"__leanplum"
 #define LP_REGION_DISTANCE_NEAR 1
