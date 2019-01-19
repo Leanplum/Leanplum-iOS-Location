@@ -14,8 +14,14 @@ before_install:
   - pod install --project-directory=Example --repo-update
 
 deploy:
-  provider: script
-  skip_cleanup: true
-  script: ./Tools/push.sh
-  on:
-    tags: true
+  - provider: releases
+    skip_cleanup: true
+    api_key:
+      secure: $GITHUB_TOKEN
+    file: LeanplumLocation.framework.zip
+    on:
+      tags: true
+  - provider: script
+    script: ./Tools/push.sh
+    on:
+      tags: true
