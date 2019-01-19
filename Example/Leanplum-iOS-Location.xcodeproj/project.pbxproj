@@ -702,20 +702,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeanplumLocationExample/Leanplum-iOS-Location-Prefix.pch";
 				INFOPLIST_FILE = "LeanplumLocationExample/Leanplum-iOS-Location-Info.plist";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocation\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";
@@ -730,20 +724,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeanplumLocationExample/Leanplum-iOS-Location-Prefix.pch";
 				INFOPLIST_FILE = "LeanplumLocationExample/Leanplum-iOS-Location-Info.plist";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocation\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";
@@ -756,7 +744,7 @@
 			baseConfigurationReference = A62F1494591BF3A5439300C7 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -766,15 +754,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocationAndBeacons\"",
-					"-framework",
-					"\"OCMock\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leanplum-iOS-Location_Example.app/Leanplum-iOS-Location_Example";
@@ -787,21 +767,13 @@
 			baseConfigurationReference = 02FBBC1EC376C6ABCC9149A7 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2F7DW8VV69;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocationAndBeacons\"",
-					"-framework",
-					"\"OCMock\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leanplum-iOS-Location_Example.app/Leanplum-iOS-Location_Example";
@@ -816,7 +788,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -828,13 +800,7 @@
 				);
 				INFOPLIST_FILE = LeanplumLocationAndBeaconsExample/Info.plist;
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocationAndBeacons\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";
@@ -849,7 +815,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BITCODE_GENERATION_MODE = "";
+				BITCODE_GENERATION_MODE = "$(inherited)";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -861,13 +827,7 @@
 				);
 				INFOPLIST_FILE = LeanplumLocationAndBeaconsExample/Info.plist;
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					"\"Leanplum\"",
-					"-framework",
-					"\"LeanplumLocationAndBeacons\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\"/**";

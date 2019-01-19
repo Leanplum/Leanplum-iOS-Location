@@ -26,9 +26,9 @@
 #import <Foundation/Foundation.h>
 #import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
-#import "LPConstants.h"
-#import "LPJSON.h"
-#import "LPLocationManager.h"
+#import <Leanplum/LPConstants.h>
+#import <Leanplum/LPJSON.h>
+#import <LeanplumLocationAndBeacons/LPLocationManager.h>
 
 /**
  * The following allows to call LPLocationManager private methods, instance variables, and
