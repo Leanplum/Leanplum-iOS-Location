@@ -2,9 +2,7 @@ language: objective-c
 osx_image: xcode10
 
 xcode_workspace: Example/Leanplum-iOS-Location.xcworkspace
-xcode_scheme: 
-  - Leanplum-iOS-Location_Example
-  - Leanplum-iOS-LocationAndBeacons_Example
+xcode_scheme: Leanplum-iOS-LocationAndBeacons_Example
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
 
 cache: cocoapods
@@ -22,6 +20,7 @@ deploy:
     api_key:
       secure: $GITHUB_TOKEN
     file: LeanplumLocation.framework.zip
+    draft: true
     on:
       tags: true
   - provider: script
