@@ -24,7 +24,7 @@
 #import "LPLocationManager.h"
 
 #import <Leanplum/Leanplum.h>
-#import <Leanplum/Constants.h>
+#import <Leanplum/LPConstants.h>
 #import <Leanplum/LPActionManager.h>
 #import <Leanplum/LeanplumInternal.h>
 #import <Leanplum/LeanplumRequest.h>
@@ -39,36 +39,41 @@
 
 #define LP_LOCATION_UPDATE_INTERVAL 7200 // 2 hours in seconds.
 
-@implementation LPLocationManager {
-    CLLocationManager *_locationManager;
+@interface LPLocationManager()
 
-    NSDictionary *_regionData;
+@property (nonatomic,strong) CLLocationManager *locationManager;
 
-    NSSet *_regions;
-    NSSet *_foregroundRegions;
-    NSSet *_backgroundRegions;
+@property (nonatomic,strong) NSDictionary *regionData;
 
-    NSSet *_foregroundNames;
-    NSSet *_backgroundNames;
+@property (nonatomic,strong) NSSet *regions;
+@property (nonatomic,strong) NSSet *foregroundRegions;
+@property (nonatomic,strong) NSSet *backgroundRegions;
+
+@property (nonatomic,strong) NSSet *foregroundNames;
+@property (nonatomic,strong) NSSet *backgroundNames;
 #ifdef LP_BEACON
-    NSMutableSet *_activeBeaconRegions;
+@property (nonatomic,strong) NSMutableSet *activeBeaconRegions;
 #endif
 
-    NSMutableDictionary *_lastKnownState;
+@property (nonatomic,strong) NSMutableDictionary *lastKnownState;
 
-    NSUInteger _maxGeofences;
-    CLLocation *_userLocation;
-    CLLocationDistance _geofenceDistanceUpperBound;
-    NSDate *_lastLocationSentDate;
-    LPLocationAccuracyType _lastLocationSentAccuracyType;
+@property (nonatomic,assign) NSUInteger maxGeofences;
+@property (nonatomic,strong) CLLocation *userLocation;
+@property (nonatomic,assign) CLLocationDistance geofenceDistanceUpperBound;
+@property (nonatomic,strong) NSDate *lastLocationSentDate;
+@property (nonatomic,assign) LPLocationAccuracyType lastLocationSentAccuracyType;
 
-    BOOL _setObserversForLocationUpdates;
-    BOOL _setObserversForGeofences;
-    BOOL _isForeground;
-    BOOL _requestedAuth;
-    BOOL _monitoringSignificantLocationChanges;
-    BOOL _isSendingLocation;
-}
+@property (nonatomic,assign) BOOL setObserversForLocationUpdates;
+@property (nonatomic,assign) BOOL setObserversForGeofences;
+@property (nonatomic,assign) BOOL isForeground;
+@property (nonatomic,assign) BOOL requestedAuth;
+@property (nonatomic,assign) BOOL monitoringSignificantLocationChanges;
+@property (nonatomic,assign) BOOL isSendingLocation;
+
+
+@end
+
+@implementation LPLocationManager
 
 #pragma mark - initialization methods
 
