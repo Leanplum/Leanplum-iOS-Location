@@ -26,7 +26,7 @@
 #import <Foundation/Foundation.h>
 #import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
-#import "Constants.h"
+#import "LPConstants.h"
 #import "LPJSON.h"
 #import "LPLocationManager.h"
 
@@ -34,13 +34,12 @@
  * The following allows to call LPLocationManager private methods, instance variables, and
  * properties.
  */
-@interface LPLocationManager () {
-@public
-    NSUInteger _maxGeofences;
-    CLLocation *_userLocation;
-    CLLocationDistance _geofenceDistanceUpperBound;
-    CLLocationManager *_locationManager;
-}
+@interface LPLocationManager ()
+
+@property (nonatomic,assign) NSUInteger maxGeofences;
+@property (nonatomic,strong) CLLocation *userLocation;
+@property (nonatomic,assign) CLLocationDistance geofenceDistanceUpperBound;
+@property (nonatomic,strong) CLLocationManager *locationManager;
 
 + (CLRegion *)regionFromDictionary:(NSDictionary *)regionData withName:(NSString *)name;
 + (NSSet*)filterLeanplumRegions:(NSSet<CLRegion *> *)regions;
@@ -348,7 +347,7 @@
 - (void)assertRegionNamesSortedByProximityTo:(NSString *)userCity
                   equalToExpectedRegionNames:(NSArray *)expectedRegionNames
 {
-    self.locationManager->_userLocation = [self.locations objectForKey:userCity];
+    self.locationManager.userLocation = [self.locations objectForKey:userCity];
     NSMutableArray *regions = self.regions;
     [self.locationManager sortRegionsByProximity:regions];
     NSArray *regionNamesSortedByProximty =
@@ -367,8 +366,8 @@
                 regionsExpectedToBeMonitored:(NSSet *)regionsExpectedToBeMonitored;
 
 {
-    self.locationManager->_userLocation =  [self.locations objectForKey:userCity];
-    self.locationManager->_maxGeofences = maxGeofences;
+    self.locationManager.userLocation =  [self.locations objectForKey:userCity];
+    self.locationManager.maxGeofences = maxGeofences;
 
     id mockLPLocationManager = OCMPartialMock(self.locationManager);
     id mockLocationManager = OCMPartialMock([self.locationManager locationManager]);
@@ -437,19 +436,19 @@
 - (void)checkUpdateMaxGeofencesForNonLPRegions:(NSUInteger)alreadyMonitoredRegionsCount
 {
     id  mockLocationManager = OCMClassMock([CLLocationManager class]);
-    self.locationManager->_locationManager = mockLocationManager;
+    self.locationManager.locationManager = mockLocationManager;
     
     CLLocationManager *locationManager = [self.locationManager locationManager];
     
     NSUInteger unusedGeofencesCount = IOS_GEOFENCE_LIMIT - alreadyMonitoredRegionsCount;
-    NSUInteger expectedMaxGeofences = MIN(self.locationManager->_maxGeofences,
+    NSUInteger expectedMaxGeofences = MIN(self.locationManager.maxGeofences,
                                           unusedGeofencesCount);
 
     [self setLocationManagerToMonitorArbitraryRegions: alreadyMonitoredRegionsCount];
     XCTAssertEqual([locationManager.monitoredRegions count], alreadyMonitoredRegionsCount);
 
     [self.locationManager updateMaxGeofences];
-    XCTAssertEqual(self.locationManager->_maxGeofences, expectedMaxGeofences);
+    XCTAssertEqual(self.locationManager.maxGeofences, expectedMaxGeofences);
 }
 
 /**
@@ -463,14 +462,14 @@
     CLLocation *farthestLocation = [self.locations objectForKey:farthestCity];
     CLCircularRegion *fartherRegion = [self.regionNameToRegion objectForKey:farthestCity];
 
-    self.locationManager->_userLocation = userLocation;
+    self.locationManager.userLocation = userLocation;
 
     NSSet *regions = [NSSet setWithArray:self.regions];
     [self.locationManager updateGeofenceDistanceUpperBound:regions];
 
     CLLocationDistance expectedDistance = [userLocation distanceFromLocation:farthestLocation] -
         fartherRegion.radius;
-    CLLocationDistance difference = fabs(self.locationManager->_geofenceDistanceUpperBound -
+    CLLocationDistance difference = fabs(self.locationManager.geofenceDistanceUpperBound -
         expectedDistance);
 
     // Allow some room for floating point precision.

@@ -18,7 +18,7 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
-			<string>Leanplum-iOS-Location-source</string>
+			<string>Leanplum-iOS-Location</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -28,7 +28,7 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
-			<string>Leanplum-iOS-SDK-source</string>
+			<string>Leanplum-iOS-SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
