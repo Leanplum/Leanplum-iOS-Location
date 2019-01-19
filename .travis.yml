@@ -15,6 +15,7 @@ before_install:
 
 deploy:
   provider: script
+  skip_cleanup: true
   script: ./Tools/push.sh
   on:
     tags: true
