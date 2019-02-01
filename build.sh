@@ -131,27 +131,27 @@ main() {
 build_ios_dylib() {
   echo "Starting build for Leanplum-SDK (iOS)"
 
-  run "Building Leanplum-SDK-iOS dynamic (device/armv7) target ..." \
+  run "Building Leanplum-iOS-Location dynamic (device/armv7) target ..." \
     xcodebuild -configuration "${CONFIGURATION}" -target "Leanplum-iOS-Location" -sdk "${DEVICE_SDK}" \
     "$ACTION" ARCHS='armv7' RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR="${BUILD_DIR}${ARMV7_DIR}" \
     BUILD_ROOT="${BUILD_ROOT}" OTHER_CFLAGS="-fembed-bitcode" \
     GCC_PREPROCESSOR_DEFINITIONS="PACKAGE_IDENTIFIER=${LEANPLUM_PACKAGE_IDENTIFIER}"
-  run "Building Leanplum-SDK-iOS dynamic (device/armv7s) target ..." \
+  run "Building Leanplum-iOS-Location dynamic (device/armv7s) target ..." \
     xcodebuild -configuration "${CONFIGURATION}" -target "Leanplum-iOS-Location" -sdk "${DEVICE_SDK}" \
     "$ACTION" ARCHS='armv7s' RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR="${BUILD_DIR}${ARMV7S_DIR}" \
     BUILD_ROOT="${BUILD_ROOT}" OTHER_CFLAGS="-fembed-bitcode" \
     GCC_PREPROCESSOR_DEFINITIONS="PACKAGE_IDENTIFIER=${LEANPLUM_PACKAGE_IDENTIFIER}"
-  run "Building Leanplum-SDK-iOS dynamic (device/arm64) target ..." \
+  run "Building Leanplum-iOS-Location dynamic (device/arm64) target ..." \
     xcodebuild -configuration "${CONFIGURATION}" -target "Leanplum-iOS-Location" -sdk "${DEVICE_SDK}" \
     "$ACTION" ARCHS='arm64' RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR="${BUILD_DIR}${ARM64_DIR}" \
     BUILD_ROOT="${BUILD_ROOT}" OTHER_CFLAGS="-fembed-bitcode" \
     GCC_PREPROCESSOR_DEFINITIONS="PACKAGE_IDENTIFIER=${LEANPLUM_PACKAGE_IDENTIFIER}"
-  run "Building Leanplum-SDK-iOS dynamic (simulator/i386) target ..." \
+  run "Building Leanplum-iOS-Location dynamic (simulator/i386) target ..." \
     xcodebuild -configuration "${CONFIGURATION}" -target "Leanplum-iOS-Location" -sdk "${SIM_SDK}" \
     "$ACTION" ARCHS='i386' VALID_ARCHS='i386' RUN_CLANG_STATIC_ANALYZER=NO \
     BUILD_DIR="${BUILD_DIR}${X86_DIR}" BUILD_ROOT="${BUILD_ROOT}" OTHER_CFLAGS="-fembed-bitcode" \
     GCC_PREPROCESSOR_DEFINITIONS="PACKAGE_IDENTIFIER=${LEANPLUM_PACKAGE_IDENTIFIER}"
-  run "Building Leanplum-SDK-iOS dynamic (simulator/x86_64) target ..." \
+  run "Building Leanplum-iOS-Location dynamic (simulator/x86_64) target ..." \
     xcodebuild -configuration "${CONFIGURATION}" -target "Leanplum-iOS-Location" -sdk "${SIM_SDK}" \
     "$ACTION" ARCHS='x86_64' VALID_ARCHS='x86_64' RUN_CLANG_STATIC_ANALYZER=NO \
     BUILD_DIR="${BUILD_DIR}${X8664_DIR}" BUILD_ROOT="${BUILD_ROOT}" OTHER_CFLAGS="-fembed-bitcode" \
@@ -178,7 +178,7 @@ build_ios_dylib() {
   sed -i "" -e "s/Leanplum-iOS-Location-umbrella.h/LeanplumLocation.h/g" \
     "${RELEASE_DIR}/LeanplumLocation.framework/modules/module.modulemap"
 
-  printf "%s\n" "Successfully built Leanplum-SDK-Location Framework.\n"
+  printf "%s\n" "Successfully built Leanplum-iOS-Location Framework.\n"
 }
 
 #######################################
