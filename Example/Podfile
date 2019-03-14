@@ -2,6 +2,15 @@ inhibit_all_warnings!
 platform :ios, '8.0'
 use_frameworks!
 
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'YES'
+      config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
+    end
+  end
+end	end
+
 target 'Leanplum-iOS-Location_Example' do
   pod 'Leanplum-iOS-Location', :path => '../'
   pod 'Leanplum-iOS-SDK'
