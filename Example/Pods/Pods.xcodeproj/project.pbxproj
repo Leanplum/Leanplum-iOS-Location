@@ -1609,10 +1609,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		169331676AAF487B5CF89AB9BD1D80D5 /* Debug */ = {
+		0483018FF81499ED1CC12DEA3B8F0B71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BE80724B542D8FC3AE54A39A485DCA8 /* OCMock.xcconfig */;
+			baseConfigurationReference = 6F7AE3BDB7A23419E58A6FD125C91AA1 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1622,17 +1624,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCMock/Info.plist";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCMock/OCMock.modulemap";
-				PRODUCT_MODULE_NAME = OCMock;
-				PRODUCT_NAME = OCMock;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1702,10 +1707,12 @@
 			};
 			name = Debug;
 		};
-		28A068274E2631BDE769B83902881876 /* Release */ = {
+		2B050421CC9F7678960BD4AE931873B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21242D9633E5B17E5505AD0EF2C9D42B /* Leanplum-iOS-SDK.xcconfig */;
+			baseConfigurationReference = 0E0D474AB6547FB142BFF2D757517B58 /* Pods-Leanplum-iOS-Location_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1715,14 +1722,49 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/Info.plist";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-Location_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK.modulemap";
-				PRODUCT_MODULE_NAME = Leanplum;
-				PRODUCT_NAME = Leanplum;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-Location_Example/Pods-Leanplum-iOS-Location_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DC49CFC2C9C059A8473F690141CEDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC101BC3D393AFDEAABC871EB756B639 /* Leanplum-iOS-LocationAndBeacons.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons.modulemap";
+				PRODUCT_MODULE_NAME = LeanplumLocationAndBeacons;
+				PRODUCT_NAME = LeanplumLocationAndBeacons;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1733,11 +1775,11 @@
 			};
 			name = Release;
 		};
-		386184D27312B10392D83783E8EC6DC7 /* Debug */ = {
+		3C4805C9397907CEE8B2CBC8D179E5A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7AE3BDB7A23419E58A6FD125C91AA1 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.debug.xcconfig */;
+			baseConfigurationReference = FC101BC3D393AFDEAABC871EB756B639 /* Leanplum-iOS-LocationAndBeacons.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1747,6 +1789,75 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons.modulemap";
+				PRODUCT_MODULE_NAME = LeanplumLocationAndBeacons;
+				PRODUCT_NAME = LeanplumLocationAndBeacons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DAA91AC405480ECC7BAE73BB394F382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AEB535C65033E3E9FC1DBD10DD56F4 /* Pods-Leanplum-iOS-LocationAndBeacons_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example/Pods-Leanplum-iOS-LocationAndBeacons_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59666010B327AA3317B39BF6354276D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D1A0E2A7695E6D2B943D97AE626EB4 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1761,16 +1872,18 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4FDD76AC22FEFB7A84F05DA0225BFEFE /* Release */ = {
+		5CD017BFEA0FF7B463C39E8719F05ADB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 879601F4A31F473A6BC8F5219BC4C290 /* Pods-Leanplum-iOS-LocationAndBeacons_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1780,6 +1893,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1800,43 +1914,11 @@
 			};
 			name = Release;
 		};
-		655B78AA557FC6A001F9B983AFD6FD4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E0D474AB6547FB142BFF2D757517B58 /* Pods-Leanplum-iOS-Location_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-Location_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-Location_Example/Pods-Leanplum-iOS-Location_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6EC8020951590BEC01DE5A482D7ADBE5 /* Debug */ = {
+		6B1D603127D62CC4966CB145BF43D8D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96BE193CDE4F014652FB472792F3E14E /* Leanplum-iOS-Location.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1846,6 +1928,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-Location/Leanplum-iOS-Location-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-Location/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1863,11 +1946,11 @@
 			};
 			name = Debug;
 		};
-		7067FBBD3780A351D17595A27F04165D /* Release */ = {
+		86723DDD0B1E0386879C0057678041DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5D1A0E2A7695E6D2B943D97AE626EB4 /* Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.release.xcconfig */;
+			baseConfigurationReference = 1BE80724B542D8FC3AE54A39A485DCA8 /* OCMock.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1877,47 +1960,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Info.plist";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMock/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests/Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7339B072DC9D1ED942D446EBDE848FCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC101BC3D393AFDEAABC871EB756B639 /* Leanplum-iOS-LocationAndBeacons.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons.modulemap";
-				PRODUCT_MODULE_NAME = LeanplumLocationAndBeacons;
-				PRODUCT_NAME = LeanplumLocationAndBeacons;
+				MODULEMAP_FILE = "Target Support Files/OCMock/OCMock.modulemap";
+				PRODUCT_MODULE_NAME = OCMock;
+				PRODUCT_NAME = OCMock;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1927,11 +1978,11 @@
 			};
 			name = Debug;
 		};
-		7A7A9BC69E481C9801293AC3EAAC7DEB /* Release */ = {
+		A3D85DC14A61C2107B32C675C12EB6B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5082C44D1D5585AFF122810BC81740F /* Pods-Leanplum-iOS-Location_Example.release.xcconfig */;
+			baseConfigurationReference = 96BE193CDE4F014652FB472792F3E14E /* Leanplum-iOS-Location.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1941,6 +1992,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-Location/Leanplum-iOS-Location-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-Location/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-Location/Leanplum-iOS-Location.modulemap";
+				PRODUCT_MODULE_NAME = LeanplumLocation;
+				PRODUCT_NAME = LeanplumLocation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B631B6ACCE97577ED8671BCEEA57743B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5082C44D1D5585AFF122810BC81740F /* Pods-Leanplum-iOS-Location_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-Location_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1961,10 +2047,11 @@
 			};
 			name = Release;
 		};
-		80CF8B8574B6430DEE8FF0A943CE9235 /* Release */ = {
+		B960C2454262D778DC5698F7699B5B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BE80724B542D8FC3AE54A39A485DCA8 /* OCMock.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1974,6 +2061,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OCMock/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1992,105 +2080,11 @@
 			};
 			name = Release;
 		};
-		A27067690F5C1668551F8230BB25D877 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7AEB535C65033E3E9FC1DBD10DD56F4 /* Pods-Leanplum-iOS-LocationAndBeacons_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Leanplum-iOS-LocationAndBeacons_Example/Pods-Leanplum-iOS-LocationAndBeacons_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B33D76A770B789D4906FB28C3848739E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96BE193CDE4F014652FB472792F3E14E /* Leanplum-iOS-Location.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-Location/Leanplum-iOS-Location-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-Location/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-Location/Leanplum-iOS-Location.modulemap";
-				PRODUCT_MODULE_NAME = LeanplumLocation;
-				PRODUCT_NAME = LeanplumLocation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C3E608D9F26BA4CD2447CE1D42A89A67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC101BC3D393AFDEAABC871EB756B639 /* Leanplum-iOS-LocationAndBeacons.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-LocationAndBeacons/Leanplum-iOS-LocationAndBeacons.modulemap";
-				PRODUCT_MODULE_NAME = LeanplumLocationAndBeacons;
-				PRODUCT_NAME = LeanplumLocationAndBeacons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E1490FF7D28BBE2D6B771E9CFE201539 /* Debug */ = {
+		C1C805062A2C956C41AAF86EB2B335CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21242D9633E5B17E5505AD0EF2C9D42B /* Leanplum-iOS-SDK.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2100,6 +2094,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2116,6 +2111,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		D74B50B1743B7C5F6998A8DBFA3B2556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21242D9633E5B17E5505AD0EF2C9D42B /* Leanplum-iOS-SDK.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Leanplum;
+				PRODUCT_NAME = Leanplum;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2181,8 +2209,8 @@
 		26FE3B8AEF8D82C1FF076E31C03C6759 /* Build configuration list for PBXNativeTarget "Pods-Leanplum-iOS-LocationAndBeacons_Example-Leanplum-iOS-Location_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				386184D27312B10392D83783E8EC6DC7 /* Debug */,
-				7067FBBD3780A351D17595A27F04165D /* Release */,
+				0483018FF81499ED1CC12DEA3B8F0B71 /* Debug */,
+				59666010B327AA3317B39BF6354276D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2199,8 +2227,8 @@
 		39A8EB553A58705297461970C952EA01 /* Build configuration list for PBXNativeTarget "Leanplum-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1490FF7D28BBE2D6B771E9CFE201539 /* Debug */,
-				28A068274E2631BDE769B83902881876 /* Release */,
+				C1C805062A2C956C41AAF86EB2B335CB /* Debug */,
+				D74B50B1743B7C5F6998A8DBFA3B2556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2208,8 +2236,8 @@
 		493A8B08D5D13AE51AF71A0E0F72DEC5 /* Build configuration list for PBXNativeTarget "Pods-Leanplum-iOS-Location_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				655B78AA557FC6A001F9B983AFD6FD4E /* Debug */,
-				7A7A9BC69E481C9801293AC3EAAC7DEB /* Release */,
+				2B050421CC9F7678960BD4AE931873B0 /* Debug */,
+				B631B6ACCE97577ED8671BCEEA57743B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2217,8 +2245,8 @@
 		5204E12B4F065B851A899EEB46F282F0 /* Build configuration list for PBXNativeTarget "Pods-Leanplum-iOS-LocationAndBeacons_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A27067690F5C1668551F8230BB25D877 /* Debug */,
-				4FDD76AC22FEFB7A84F05DA0225BFEFE /* Release */,
+				3DAA91AC405480ECC7BAE73BB394F382 /* Debug */,
+				5CD017BFEA0FF7B463C39E8719F05ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2226,8 +2254,8 @@
 		5E26C16D38D3712A7B8BB9EA02025D3F /* Build configuration list for PBXNativeTarget "Leanplum-iOS-Location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EC8020951590BEC01DE5A482D7ADBE5 /* Debug */,
-				B33D76A770B789D4906FB28C3848739E /* Release */,
+				6B1D603127D62CC4966CB145BF43D8D7 /* Debug */,
+				A3D85DC14A61C2107B32C675C12EB6B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2235,8 +2263,8 @@
 		AE8BA48E64C0BE4DC719C4BAE69F06A8 /* Build configuration list for PBXNativeTarget "OCMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				169331676AAF487B5CF89AB9BD1D80D5 /* Debug */,
-				80CF8B8574B6430DEE8FF0A943CE9235 /* Release */,
+				86723DDD0B1E0386879C0057678041DE /* Debug */,
+				B960C2454262D778DC5698F7699B5B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2244,8 +2272,8 @@
 		EBFCE36AF8804E87CEBFF3A967E5350C /* Build configuration list for PBXNativeTarget "Leanplum-iOS-LocationAndBeacons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7339B072DC9D1ED942D446EBDE848FCF /* Debug */,
-				C3E608D9F26BA4CD2447CE1D42A89A67 /* Release */,
+				3C4805C9397907CEE8B2CBC8D179E5A8 /* Debug */,
+				2DC49CFC2C9C059A8473F690141CEDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

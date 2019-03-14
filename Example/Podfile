@@ -9,7 +9,7 @@ post_install do |installer|
       config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
     end
   end
-end	end
+end
 
 target 'Leanplum-iOS-Location_Example' do
   pod 'Leanplum-iOS-Location', :path => '../'
