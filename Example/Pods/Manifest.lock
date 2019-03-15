@@ -1,7 +1,7 @@
 PODS:
-  - Leanplum-iOS-Location (2.3.1):
+  - Leanplum-iOS-Location (2.4.0):
     - Leanplum-iOS-SDK
-  - Leanplum-iOS-LocationAndBeacons (2.3.1):
+  - Leanplum-iOS-LocationAndBeacons (2.4.0):
     - Leanplum-iOS-SDK
   - Leanplum-iOS-SDK (2.3.0)
   - OCMock (3.3.1)
@@ -24,11 +24,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Leanplum-iOS-Location: 07fe35b585562083faf7e2916f2c34816731b39b
-  Leanplum-iOS-LocationAndBeacons: 9f9508eeeae9a2bf9c17d9101c4d3d72266767c6
+  Leanplum-iOS-Location: 9de2763947e1cbd40c5d385bdfd51a961d65134a
+  Leanplum-iOS-LocationAndBeacons: d078ef84da257a5b0b97d79f1eee226acc6e8e75
   Leanplum-iOS-SDK: 1ac5d42b8cafe1fcd51f76efcf1f321704e5d807
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
 
-PODFILE CHECKSUM: 5ce4a4fc5ded31e665b2c3b862abc4647171b2a8
+PODFILE CHECKSUM: 855e081f4e5f5956a72876cddeb7c2031b216848
 
 COCOAPODS: 1.5.3
