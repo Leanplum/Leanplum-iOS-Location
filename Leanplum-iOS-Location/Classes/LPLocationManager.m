@@ -116,9 +116,6 @@
 + (LPLocationManager *)sharedManager
 {
     LP_TRY
-    if (!SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
-        return nil;
-    }
     static LPLocationManager *_sharedManager = nil;
     static dispatch_once_t revenueManagerToken;
     dispatch_once(&revenueManagerToken, ^{
@@ -127,8 +124,6 @@
     return _sharedManager;
     LP_END_TRY
 }
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
 
 #pragma mark - Region tracking
 
@@ -186,12 +181,10 @@
     CLAuthorizationStatus authStatus = [CLLocationManager authorizationStatus];
 
     BOOL needsAuth = authStatus == kCLAuthorizationStatusNotDetermined;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
     if (_backgroundRegions.count > 0 && authStatus == kCLAuthorizationStatusAuthorizedWhenInUse) {
         needsAuth = YES;
     }
     _needsAuthorization = needsAuth;
-#endif
     if (_needsAuthorization) {
         _requestedAuth = YES;
         if (_authorizeAutomatically) {
@@ -203,12 +196,10 @@
 
 - (void)authorize {
     LP_TRY
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
     CLLocationManager *locationManager = [self locationManager];
     if ([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
         [locationManager requestAlwaysAuthorization];
     }
-#endif
     LP_END_TRY
 }
 
@@ -771,12 +762,8 @@
 {
     LP_TRY
     _needsAuthorization = NO;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
     if (_requestedAuth && (status == kCLAuthorizationStatusAuthorizedAlways ||
                            status == kCLAuthorizationStatusAuthorizedWhenInUse)) {
-#else
-        if (_requestedAuth && (status == kCLAuthorizationStatusAuthorized)) {
-#endif
         _requestedAuth = NO;
         [self setMonitoredRegions];
     }
@@ -830,7 +817,5 @@
         }
     }
 }
-
-#endif
 
 @end
