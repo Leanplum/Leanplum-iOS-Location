@@ -1,7 +1,7 @@
 PODS:
-  - Leanplum-iOS-Location (2.4.1-beta1):
+  - Leanplum-iOS-Location (2.4.0):
     - Leanplum-iOS-SDK
-  - Leanplum-iOS-LocationAndBeacons (2.4.1-beta1):
+  - Leanplum-iOS-LocationAndBeacons (2.4.0):
     - Leanplum-iOS-SDK
   - Leanplum-iOS-SDK (2.3.0)
   - OCMock (3.3.1)
