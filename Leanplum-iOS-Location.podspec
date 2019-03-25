@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/Leanplum/Leanplum-iOS-Location.git', :tag => s.version.to_s}
   s.source_files = 'Leanplum-iOS-Location/Classes/**/*'
   s.frameworks = 'CoreLocation'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC', 'BITCODE_GENERATION_MODE' => 'bitcode' }
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
   s.dependency 'Leanplum-iOS-SDK'
   s.module_name = 'LeanplumLocation'
