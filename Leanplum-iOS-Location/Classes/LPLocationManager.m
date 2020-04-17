@@ -255,8 +255,8 @@
                     object:nil queue:nil
                 usingBlock:^(NSNotification *notification) {
         LP_TRY
-        _isForeground = NO;
-        [self setMonitoredRegions:_backgroundRegions requestAllState:NO];
+        self.isForeground = NO;
+        [self setMonitoredRegions:self.backgroundRegions requestAllState:NO];
         LP_END_TRY
     }];
 
@@ -266,8 +266,8 @@
                     object:nil queue:nil
                 usingBlock:^(NSNotification *notification) {
         LP_TRY
-        _isForeground = YES;
-        [self setMonitoredRegions:_regions requestAllState:YES];
+        self.isForeground = YES;
+        [self setMonitoredRegions:self.regions requestAllState:YES];
         LP_END_TRY
     }];
 
@@ -277,8 +277,8 @@
                     object:nil queue:nil
                 usingBlock:^(NSNotification *notification) {
         LP_TRY
-        _isForeground = NO;
-        [self setMonitoredRegions:_backgroundRegions requestAllState:NO];
+        self.isForeground = NO;
+        [self setMonitoredRegions:self.backgroundRegions requestAllState:NO];
         LP_END_TRY
     }];
 
@@ -583,10 +583,10 @@
                                                country:placemark? placemark.ISOcountryCode: nil
                                                   type:locationAccuracyType
                                        responseHandler:^(BOOL success) {
-              _isSendingLocation = NO;
+              self.isSendingLocation = NO;
               if (success) {
-                  _lastLocationSentDate = [NSDate date];
-                  _lastLocationSentAccuracyType = locationAccuracyType;
+                  self.lastLocationSentDate = [NSDate date];
+                  self.lastLocationSentAccuracyType = locationAccuracyType;
                   LPLog(LPDebug, @"setUserAttributes is successfully called");
               }
         }];
