@@ -393,7 +393,9 @@
         CLAuthorizationStatus authorizationStatus = [CLLocationManager authorizationStatus];
         if (authorizationStatus == kCLAuthorizationStatusAuthorizedWhenInUse
             || authorizationStatus == kCLAuthorizationStatusAuthorizedAlways) {
-            [[self locationManager] requestLocation];
+            if (@available(iOS 9.0, *)) {
+                [[self locationManager] requestLocation];
+            }
         }
     } else {
         if ([[self locationManager] respondsToSelector:@selector
