@@ -24,6 +24,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
+NS_SWIFT_NAME(LocationManager)
 @interface LPLocationManager : NSObject <CLLocationManagerDelegate>
 
 + (LPLocationManager *)sharedManager;
@@ -49,3 +52,5 @@
 - (void)authorize;
 
 @end
+
+NS_ASSUME_NONNULL_END
