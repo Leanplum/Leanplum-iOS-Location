@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://www.leanplum.com/docs#/docs'
   s.dependency 'Leanplum-iOS-SDK'
   s.module_name = 'LeanplumLocation'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 end
