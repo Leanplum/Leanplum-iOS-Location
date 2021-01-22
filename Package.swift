@@ -9,7 +9,7 @@ let package = Package(
     targets: [
         .target(
             name: "LeanplumLocation",
-            path: "Leanplum-iOS-Location"
+            path: "Leanplum-iOS-Location",
             publicHeadersPath: "Leanplum-iOS-Location/include"
         )
     ]
