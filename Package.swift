@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "LeanplumLocation",
     products: [
-        .library(name: "LeanplumLocation", targets: ["Leanplum-iOS-Location"])
+        .library(name: "LeanplumLocation", targets: ["LeanplumLocation"])
     ],
     targets: [
         .target(
