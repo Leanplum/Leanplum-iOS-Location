@@ -1,5 +1,10 @@
 # Leanplum-iOS-Location
-Please refer to the active development branch develop to see the latest source code.
+❗ __IMPORTANT__ \
+Starting from version [4.0.0](https://github.com/Leanplum/Leanplum-iOS-SDK/releases/tag/4.0.0) this __repo has been merged into the main [Leanplum-iOS-SDK](https://github.com/Leanplum/Leanplum-iOS-SDK) repo__. \
+New versions are being __released as part of the main repo__. 
+You can find dynamic and static frameworks in the Assets of each release. \
+_This repo is no longer maintained._
+
 ## Installation & Usage
 Please refer to: https://www.leanplum.com/docs#/setup/ios
 ## Development Workflow
